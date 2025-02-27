@@ -38,7 +38,7 @@ function LogoLetters() {
   })
 
   // Create array of characters with proper spacing
-  const text = "AI  ART  TODAY"
+  const text = "AI ART TODAY"
   const letterSpacing = 0.25
   const wordSpacing = 0.25
   const startAngle = -0.4
@@ -57,9 +57,9 @@ function LogoLetters() {
     const angle = startAngle + totalSpacing * arcLength
 
     // Create unique oscillation parameters for each letter
-    const speedMultiplier = 0.8 + ((i * 0.1) % 0.4) // Values between 0.8 and 1.2
-    const floatIntensity = 0.3 + ((i * 0.07) % 0.2) // Values between 0.3 and 0.5
-    const rotationIntensity = 0.2 + ((i * 0.05) % 0.1) // Values between 0.2 and 0.3
+    const speedMultiplier = 1.8 + ((i * 0.1) % 0.4) // Values between 0.8 and 1.2
+    const floatIntensity = 1.3 + ((i * 0.07) % 0.2) // Values between 0.3 and 0.5
+    const rotationIntensity = 1.2 + ((i * 0.05) % 0.1) // Values between 0.2 and 0.3
 
     return {
       char,
