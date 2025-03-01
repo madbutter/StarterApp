@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
 import GeneralNavbar from "./GeneralNavbar";
@@ -8,7 +9,6 @@ const GeneralLayout = ({ children }: { children: React.ReactNode }) => {
   const { selectedTheme } = useAppSelector((state: any) => state.theme);
 
   useEffect(() => {
-    // Apply theme class to document element
     if (selectedTheme === Themes.dark) {
       document.documentElement.classList.add("dark");
     } else {
