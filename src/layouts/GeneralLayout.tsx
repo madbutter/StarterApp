@@ -24,7 +24,7 @@ const GeneralLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} ShadcnApp. All rights reserved.
+              &copy; {new Date().getFullYear()} AiArtToday. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
