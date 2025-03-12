@@ -1,21 +1,18 @@
 "use client";
 
 import React from "react";
-import dynamic from "next/dynamic";
 import GeneralLayout from "@/layouts/GeneralLayout";
+import dynamic from "next/dynamic";
 
-// Dynamically import the 3D component with SSR disabled
-const AICityScene = dynamic(() => import("@/components/3D/AICityScene"), {
+const Scene = dynamic(() => import("@/components/3D/Scene"), {
   ssr: false,
-  loading: () => <div>Loading 3D scene...</div>,
+  loading: () => <div className="w-full h-screen flex items-center justify-center">Loading 3D scene...</div>,
 });
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <GeneralLayout>
-      <AICityScene />
+      <Scene />
     </GeneralLayout>
   );
-};
-
-export default Home;
+}
